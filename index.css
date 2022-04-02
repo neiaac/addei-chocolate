@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background-color: #5E358C;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-image: url('./assets/background-vectors.svg');
+    background-size: 90%;
+}
+
+main {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 65%;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 2em;
+}
+
+h1 {
+    margin-bottom: 0.75em;
+}
+
+.title p {
+    font-size: 0.75em;
+}
+
+.content {
+    text-align: center;
+    line-height: 0.5em;
+    height: fit-content;
+}
+
+.content p span {
+    font-style: italic;
+}
