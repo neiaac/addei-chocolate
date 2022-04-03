@@ -9,27 +9,43 @@ body {
 }
 
 main {
-    position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#frame,
 .content {
-    position: absolute;
-    top: 45%;
+    position: fixed;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-img {
-    width: 65%;
+.content {
+    text-align: center;
+    line-height: 5%;
+    height: fit-content;
+}
+
+.content span {
+    font-style: italic;
+}
+
+.content a {
+    text-decoration: underline;
+    color: white;
+}
+
+#frame {
+    width: 75vw;
+    max-width: 60em;
 }
 
 .title {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.5vw;
     margin-bottom: 2em;
 }
 
@@ -41,12 +57,34 @@ h1 {
     font-size: 0.75em;
 }
 
-.content {
-    text-align: center;
-    line-height: 0.5em;
-    height: fit-content;
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.content p span {
-    font-style: italic;
+.socials a {
+    text-decoration: none;
+    margin: 1em;
+}
+
+.socials img {
+    width: 2em;
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        background-size: 70% no-repeat;
+        background-position: center;
+    }
+
+    #frame {
+        display: none;
+    }
+
+    .subtitle {
+        width: fit-content;
+        line-height: normal;
+    }
 }
